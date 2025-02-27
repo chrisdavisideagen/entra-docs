@@ -82,14 +82,14 @@ Follow these steps to enable Microsoft Entra SSO.
 	> [!NOTE]
 	> Your huddle instance will be automatically detected from the domain you enter below.
 
-    a. In the **Identifier** text box,type one of the following URLs:
+    a. In the **Identifier** text box,type one of the following URLs, depending on whether you are on the system ending .net or .com:
 
     | **Identifier** |
     |------|
     | `https://login.huddle.net` |
     | `https://login.huddle.com` |
 
-    b. In the **Reply URL** text box, type one of the following URLs:
+    b. In the **Reply URL** text box, type one of the following URLs, depending on whether you are on the system ending .net or .com:
 
     | **Reply URL** |
     |----|
@@ -99,21 +99,24 @@ Follow these steps to enable Microsoft Entra SSO.
 
 5. Click **Set additional URLs** and perform the following step if you wish to configure the application in **SP** initiated mode:
 
-    In the **Sign-on URL** text box, type a URL using the following patterns:
+    In the **Sign-on URL** text box, type a URL using the following patterns, depending on whether you are on the system ending .net or .com and whether you have a custom sub-sdomain:
 
     | **Sign-on URL** |
     |----|
+    | `https://<customsubdomain>.huddle.net` |
+    | `https://my.huddle.net` |
     | `https://<customsubdomain>.huddle.com` |
     | `https://us.huddle.com` |
+
       
 	> [!NOTE]
 	> The Sign-on URL value is not real. Update this value with the actual Sign-On URL. Contact [Huddle Client support team](https://huddle.zendesk.com) to get this value.
 
-6. On the **Set up Single Sign-On with SAML** page, in the **SAML Signing Certificate** section, click **Download** to download the **Certificate (Base64)** from the given options as per your requirement and save it on your computer.
+7. On the **Set up Single Sign-On with SAML** page, in the **SAML Signing Certificate** section, click **Download** to download the **Certificate (Base64)** from the given options as per your requirement and save it on your computer.
 
 	![The Certificate download link](common/certificatebase64.png)
 
-7. On the **Set up Huddle** section, copy the appropriate URL(s) as per your requirement.
+8. On the **Set up Huddle** section, copy the appropriate URL(s) as per your requirement.
 
 	![Copy configuration URLs](common/copy-configuration-urls.png)
 
